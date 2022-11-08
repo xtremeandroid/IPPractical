@@ -1,6 +1,6 @@
 # IPPractical
 
-To Run Node Programs 
+# To Run Node Programs 
 run command 
 
 node filename.js
@@ -8,7 +8,7 @@ node filename.js
 for node calculator app install this from terminal
 npm install basic-calculator-js
 
-To Run React Programs
+# To Run React Programs
 
 run this command
 
@@ -22,7 +22,7 @@ npm start
 
 copy files from respective exp folder to /src click replace all if asked.
 
-for SinglePageApp(EXP12)
+# for SinglePageApp(EXP12)
 
 install this
 
