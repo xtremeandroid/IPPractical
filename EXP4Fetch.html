@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch</title>
+</head>
+
+<body>
+    <button id="btn">Click me</button>
+    <div id="base"></div>
+   
+</body>
+<script>
+    document.getElementById("btn").addEventListener("click", Practical);
+
+      function Practical(){
+        console.log("pending")
+        setTimeout(() => {
+         
+                url = "https://jsonplaceholder.typicode.com/users"
+                fetch(url).then((res) => {
+                    return res.json();
+                }).then((data) => {
+                    console.log(data)
+                    for(let i in data){
+                        document.getElementById("base").innerHTML+=`<span>User Id is :  </span>${data[i].id}<span> </span>`;
+                        document.getElementById("base").innerHTML+=`<span>User Name is : </span>${data[i].name}<br>`;
+                    };
+                   
+         
+                })
+        }, 3000)
+      }
+
+   
+</script>
+
+</html>

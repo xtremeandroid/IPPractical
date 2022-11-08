@@ -1,0 +1,21 @@
+<!-- write program for promise using if condition  -->
+<script>
+    let p = 15
+   let pro=new Promise(function(resolve,reject ){
+   if(p>13)
+   {
+       resolve("Accepted because it is true")
+   }
+   else{
+       reject("Rejected because it is false")
+   }
+});
+
+//    console.log(pro)
+pro.then(function res(result){
+console.log(result)
+}).catch(function rej(reject){
+   console.log(reject)
+});
+
+</script>
