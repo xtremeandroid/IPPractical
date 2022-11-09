@@ -6,7 +6,8 @@ import SinglePageApp from "./SinglePageApp";
 function App() {
   return (
     <div className="App">
-   <BrowserRouter>
+
+<BrowserRouter>
       <Routes>
           <Route exact path="" element={<SinglePageApp />} />
           <Route exact path="About" element={<About />} />

@@ -1,24 +1,12 @@
 import React from 'react'
-import {  Link } from "react-router-dom";
+import Main from './main'
 
 const SinglePageApp = () => {
   return (
-    <div>
-<nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/About">About</Link>
-          </li>
-          <li>
-            <Link to="/Contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
+ <div>
+  <Main/>
+  <h1>This is Home Page</h1>
+ </div>
   )
 }
 export default SinglePageApp;

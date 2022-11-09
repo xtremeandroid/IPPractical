@@ -1,8 +1,12 @@
 import React from 'react'
+import Main from './main'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div>
+          <Main/>
+<h1>This is Contact Page</h1>
+    </div>
   )
 }
 

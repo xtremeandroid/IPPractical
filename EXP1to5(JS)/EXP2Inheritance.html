@@ -1,20 +1,32 @@
-<script>
-    // parent class
-class Person { 
-    constructor(name) {
-        this.name = name;
-    }
+<!DOCTYPE html>
+<html lang="en">
+	<title>Write classes and inheritance using ES6 with example</title>
+	<head>
+		<script type="text/javascript">
+			class stud
+			{
+				constructor(name)
+				{
+					this.sname=name;
+				}
+				placement()
+				{
+					return `hi i am ${this.sname}`;
+				}
+			}
+			class stud1 extends stud
+			{
+				constructor(name)
+				{
+					super(name);
+					
+				}
+			}
+			let stu1 = new stud1('Ayush');
+			console.log(stu1.placement());
 
-    greet() {
-        console.log(`Hello ${this.name}`);
-    }
-}
-
-// inheriting parent class
-class Student extends Person {
-
-}
-
-let student1 = new Student('Ayush Singh');
-student1.greet();
-</script>
+			let stu3 = new stud1('Ishan');
+			console.log(stu3.placement());
+		</script>
+	</head>
+</html>
